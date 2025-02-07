@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(175, 200, 163);
+  /*background-image: url('./src/images/war.jpg');*/
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-card {
+  flex-basis: 225px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Adding a glowing border effect */
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background:  rgb(158, 192, 142);
+ /* linear-gradient(45deg, #3e8634, #8356a1, #765299);*/
+  z-index: -1;
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.contact-card:hover::before {
+  opacity: 1;
+  filter: blur(8px);
+}
+
+/* Subtle lifting effect */
+.contact-card:active {
+  transform: scale(0.98);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card > img {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.contact-card > h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.info-group {
+  display: flex;
+  align-items: center;
+}
+
+.info-group > img {
+  height: 11px;
+  margin-right: 8px;
+}
+
+.info-group > p {
+  margin-block: 3px;
+  font-size: 12px;
+  color: #2B283A;
+}
