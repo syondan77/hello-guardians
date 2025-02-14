@@ -8,14 +8,14 @@ export default function Contact(props) {
             <h3>{props.name}</h3>
             <div className="info-group">
                 <img
-                    src="./src/images/phone.jpg"
+                    src="./phone.jpg"
                     alt="phone icon"
                 />
                 <p>{props.phone}</p>
             </div>
             <div className="info-group">
                 <img
-                    src="./src/images/mail.png"
+                    src="./mail.png"
                     alt="mail icon"
                 />
                 <p>{props.email}</p>

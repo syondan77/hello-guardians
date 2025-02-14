@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   font-family: 'Inter', sans-serif;
-  background-color: rgb(175, 200, 163);
+  background-color: #990011;
   /*background-image: url('./src/images/war.jpg');*/
   background-size: cover;
   background-repeat: no-repeat; 
@@ -49,7 +49,7 @@ body {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background:  rgb(158, 192, 142);
+  background: #a68883;
  /* linear-gradient(45deg, #3e8634, #8356a1, #765299);*/
   z-index: -1;
   border-radius: 12px;
